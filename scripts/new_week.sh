@@ -26,7 +26,7 @@ mkdir -p "${ROOT}/${DIR}/src"
 sed "s/Week NN/Week ${NUM}/g" "${T}/week-README.md" > "${ROOT}/${DIR}/README.md"
 
 # The four-part docs
-for f in plan progress verify notes; do
+for f in plan progress verify notes concept; do
   sed "s/Week NN/Week ${NUM}/g" "${T}/${f}.md" > "${ROOT}/${DIR}/${f}.md"
 done
 

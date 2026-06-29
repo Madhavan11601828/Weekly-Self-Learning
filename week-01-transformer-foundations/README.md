@@ -12,6 +12,10 @@ tokenization step (BPE / WordPiece / SentencePiece) that feeds them.
 3. **[Verify](verify.md)** — concept checklist + runnable proof
 4. **[Notes](notes.md)** — concept notes & gotchas
 
+Concept reading (Tue/Thu): **[concept.md](concept.md)** — practitioner-depth
+walkthrough of attention, positional encoding, the architecture trichotomy, and
+tokenization.
+
 ## How to run
 ```bash
 # from the repo root, with the env active (see SETUP.md):

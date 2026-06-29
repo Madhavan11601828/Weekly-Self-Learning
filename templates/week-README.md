@@ -10,6 +10,8 @@ One-line description of what this week covers.
 3. **[Verify](verify.md)** — concept checklist + runnable proof
 4. **[Notes](notes.md)** — concept notes & gotchas
 
+Concept reading (Tue/Thu): **[concept.md](concept.md)** — practitioner-depth walkthrough.
+
 ## How to run
 ```bash
 # from the repo root, create + activate the env once (skip if already active):
