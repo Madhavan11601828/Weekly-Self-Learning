@@ -22,10 +22,11 @@ A working repo skeleton:
 - `week-00-setup/src/verify_env.py` — environment sanity check
 
 ## How to run
+Full Windows-first walkthrough is in [`../SETUP.md`](../SETUP.md). Short version:
 ```bash
 # install uv first: https://docs.astral.sh/uv/
 uv python install 3.11
-uv venv && source .venv/bin/activate
+uv venv --python 3.11 && source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
 uv pip install -r week-00-setup/requirements.txt
 python week-00-setup/src/verify_env.py
 ```

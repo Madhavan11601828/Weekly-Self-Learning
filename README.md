@@ -15,12 +15,16 @@ covered already" and is updated at the end of every week.
 
 ## How to use this repo
 
+> First time here? Follow [`SETUP.md`](SETUP.md) for the full Windows-first
+> environment bootstrap. Quick version below.
+
 ```bash
 # one-time: install uv (https://docs.astral.sh/uv/) then:
 uv python install 3.11
-uv venv && source .venv/bin/activate
+uv venv --python 3.11 && source .venv/bin/activate   # Windows: .venv\Scripts\Activate.ps1
 
-# per week: install that week's pinned deps
+# per week: activate the env (if not already), then install that week's pinned deps
+source .venv/bin/activate                            # Windows: .venv\Scripts\Activate.ps1
 uv pip install -r week-01-<slug>/requirements.txt
 
 # scaffold a new week folder from the templates

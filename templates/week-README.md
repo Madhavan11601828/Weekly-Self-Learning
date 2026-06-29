@@ -16,6 +16,11 @@
 
 ## How to run
 ```bash
+# from the repo root, create + activate the env once (skip if already active):
+uv venv --python 3.11
+source .venv/bin/activate        # Windows: .venv\Scripts\Activate.ps1
+
+# then, for this week:
 uv pip install -r requirements.txt
 python src/<entry>.py
 ```
