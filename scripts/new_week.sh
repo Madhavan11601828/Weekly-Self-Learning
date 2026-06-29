@@ -13,6 +13,7 @@ NUM="$1"
 SLUG="$2"
 DIR="week-${NUM}-${SLUG}"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+T="${ROOT}/templates"
 
 if [ -d "${ROOT}/${DIR}" ]; then
   echo "Error: ${DIR} already exists." >&2
@@ -20,9 +21,17 @@ if [ -d "${ROOT}/${DIR}" ]; then
 fi
 
 mkdir -p "${ROOT}/${DIR}/src"
-sed "s/Week NN/Week ${NUM}/g" "${ROOT}/templates/week-README.md" > "${ROOT}/${DIR}/README.md"
-sed "s/Week NN/Week ${NUM}/g" "${ROOT}/templates/notes.md"       > "${ROOT}/${DIR}/notes.md"
-cp "${ROOT}/templates/requirements.txt" "${ROOT}/${DIR}/requirements.txt"
 
-echo "Created ${DIR}/ (README.md, notes.md, requirements.txt, src/)"
-echo "Next: fill the README, add code under src/, then update the master index."
+# README index (substitute the week number)
+sed "s/Week NN/Week ${NUM}/g" "${T}/week-README.md" > "${ROOT}/${DIR}/README.md"
+
+# The four-part docs
+for f in plan progress verify notes; do
+  sed "s/Week NN/Week ${NUM}/g" "${T}/${f}.md" > "${ROOT}/${DIR}/${f}.md"
+done
+
+cp "${T}/requirements.txt" "${ROOT}/${DIR}/requirements.txt"
+
+echo "Created ${DIR}/ with:"
+echo "  README.md  plan.md  progress.md  verify.md  notes.md  requirements.txt  src/"
+echo "Next: fill plan.md, then work through progress.md day by day."

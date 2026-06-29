@@ -57,7 +57,7 @@ the listed range loosely.
 | Week | Topic | Source | Status | One-line summary |
 |------|-------|--------|--------|------------------|
 | 00 | Repo & reproducible-env scaffold | — | 🟩 | Master index, per-week template, uv env, env-verify script |
-| 01 | Transformer Architecture & Tokenization | M1 | ⬜ | Embeddings, attention, encoder/decoder, BPE/WordPiece/SentencePiece |
+| 01 | Transformer Architecture & Tokenization | M1 | 🟦 | Embeddings, attention, encoder/decoder, BPE/WordPiece/SentencePiece |
 | 02 | Fine-Tuning Transformer Architectures in Practice | M2 | ⬜ | Attention from scratch; fine-tune DistilBERT / DistilGPT / T5 |
 | 03 | Inference Optimization, Attention Variants & Scaling Laws | M3 | ⬜ | KV cache, FlashAttention, MQA/GQA/MLA, RoPE, Chinchilla |
 | 04 | LLM Fine-Tuning Lifecycle & Pre-Training | M4 | ⬜ | Pre vs post-training, CPT, CLM/MLM/Prefix-LM, MTP |

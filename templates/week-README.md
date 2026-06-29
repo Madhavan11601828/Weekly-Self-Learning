@@ -1,18 +1,14 @@
 # Week NN — <Topic Title>
 
 > Source: Module NN · Status: ⬜ | 🟦 | 🟨 | 🟩
-> Prereqs from prior weeks: <links to earlier weeks, or "none">
 
-## Objectives
-- <what you'll be able to do after this week>
+One-line description of what this week covers.
 
-## Layers covered
-- **Basics** — <core intuition>
-- **Intermediate** — <implementation details, patterns, trade-offs>
-- **Advanced** — <edge cases, optimization, production concerns>
-
-## Deliverable
-<the hands-on artifact built this week>
+## The four parts
+1. **[Plan](plan.md)** — objectives, layers, deliverable
+2. **[Progress](progress.md)** — day-by-day learning + project progress
+3. **[Verify](verify.md)** — concept checklist + runnable proof
+4. **[Notes](notes.md)** — concept notes & gotchas
 
 ## How to run
 ```bash
@@ -25,14 +21,7 @@ uv pip install -r requirements.txt
 python src/<entry>.py
 ```
 
-## Key takeaways
-- <1–3 lines a future-me would want when referencing this week>
-
 ## Real-World Implementation & Challenges
-- **Where this shows up in production:** <real systems / use cases>
-- **Common failure modes:** <what breaks, why>
-- **How it's addressed:** <mitigations, patterns, tooling>
-- **Open questions / things to revisit:** <…>
-
-## References
-- <papers, docs, repos>
+- **Where this shows up in production:** <…>
+- **Common failure modes:** <…>
+- **How it's addressed:** <…>
