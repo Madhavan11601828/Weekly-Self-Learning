@@ -1,0 +1,7 @@
+# Week 00 — minimal, just enough to run the env check.
+# Later weeks pin heavier stacks (torch, transformers, etc.) as needed.
+# Uncomment to smoke-test the full import path on a GPU box:
+# torch==2.5.1
+# transformers==4.46.2
+# datasets==3.1.0
+# numpy==2.1.3

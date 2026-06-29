@@ -1,0 +1,4 @@
+# Week NN pinned dependencies.
+# Pin exact versions for reproducibility, e.g.:
+# torch==2.5.1
+# transformers==4.46.2

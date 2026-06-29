@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Env / secrets
+.env
+*.env
+
+# ML artifacts (keep the repo a portfolio, not a model store)
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.ckpt
+wandb/
+outputs/
+checkpoints/
+data/raw/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

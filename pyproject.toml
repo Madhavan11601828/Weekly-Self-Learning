@@ -1,0 +1,17 @@
+[project]
+name = "ml-learning"
+version = "0.0.0"
+description = "Production LLM Engineering — weekly basics-to-advanced learning repo"
+requires-python = ">=3.11,<3.12"
+
+# Per-week deps live in each week's requirements.txt for reproducibility.
+# This file pins the Python version and repo-wide tooling only.
+[dependency-groups]
+dev = [
+    "ruff>=0.7",
+    "ipython>=8",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
